@@ -10,14 +10,9 @@ load image on kind cluster:
 kind load docker-image magmacore/nginx:1.4.0
 ```
 
-get inside kind container:
-```bash
-docker exec -it kind-control-plane bash
-```
-
 check all the images available on kind cluster:
 ```bash
-crictl images
+docker exec -it kind-control-plane crictl images
 ```
 
 delete cluster:
