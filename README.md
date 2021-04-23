@@ -24,4 +24,12 @@ delete cluster:
 ```bash
 kind delete cluster
 ```
- 
+
+### LoadBalancer
+
+Install [metallb](https://metallb.universe.tf/installation/#installation-by-manifest)
+
+check the IP range for kind docker network:
+```bash
+docker network inspect -f '{{.IPAM.Config}}' kind
+```
