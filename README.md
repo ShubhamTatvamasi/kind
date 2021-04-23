@@ -22,6 +22,6 @@ crictl images
 
 delete cluster:
 ```bash
- kind delete cluster
- ```
+kind delete cluster
+```
  
