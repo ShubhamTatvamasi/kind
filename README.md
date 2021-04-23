@@ -34,6 +34,7 @@ check the IP range for kind docker network:
 docker network inspect -f '{{.IPAM.Config}}' kind
 ```
 
+Setup address pool:
 ```
 kubectl create -f - << EOF
 apiVersion: v1
