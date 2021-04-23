@@ -33,3 +33,22 @@ check the IP range for kind docker network:
 ```bash
 docker network inspect -f '{{.IPAM.Config}}' kind
 ```
+
+```
+kubectl create -f - << EOF
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: metallb-system
+  name: config
+data:
+  config: |
+    address-pools:
+    - name: default
+      protocol: layer2
+      addresses:
+      - 172.18.255.200-172.18.255.250
+EOF
+```
+
+
