@@ -19,3 +19,9 @@ check all the images available on kind cluster:
 ```bash
 crictl images
 ```
+
+delete cluster:
+```bash
+ kind delete cluster
+ ```
+ 
