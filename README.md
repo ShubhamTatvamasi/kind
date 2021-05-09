@@ -47,4 +47,12 @@ data:
 EOF
 ```
 
+### Kubeconfig
+
+get kubeconfig:
+```bash
+kind get kubeconfig
+```
+
+
 
