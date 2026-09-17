@@ -1,5 +1,12 @@
 # kind
 
+Install Kind:
+```bash
+brew install kind
+```
+
+---
+
 start kind cluster:
 ```bash
 kind create cluster
